@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Survey</title>
+      <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div>
+      <h1 id="title">Product Satisfaction Survey</h1>
+      <p id="description">Please tell us what you think about our products</p>
+    </div>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Enter your name: </label>
+        <input type="text" id="name" required placeholder="Name"/>
+        <label for="email" id="email-label">Enter your email: </label>
+        <input type="email" id="email" required placeholder="Email"/>
+        <label for="number" id="number-label">Enter your age: </label>
+        <input type="number" id="number" placeholder="Age" min="18" max="100"/>
+
+      </fieldset>
+      <fieldset>
+        <select id="dropdown">
+          <option>(Type of product)</option>
+          <option>Foods</option>
+          <option>Drinks</option>
+          <option>Other</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <p>How satisficed were you?</p>
+        <label for="r1" > <input type="radio" id="r1" name="satisficed" value="very" class="inline">Very</label>
+        
+        <label for="r2" > <input type="radio" id="r2" name="satisficed" value="average" class="inline">Average</label>
+        
+        <label for="r3" > <input type="radio" id="r3" name="satisficed" value="poor" class="inline">Poorly</label>
+        
+      </fieldset>
+      <fieldset>
+        
+        <label for="c1">I agree the Terms of Service <input type="checkbox" id="tos" value="tos" class="inline"></label>
+           
+        <label for="c2">Allow us to use this information to improve our service  <input type="checkbox" id="c2"  value="consent" class="inline"></label>     
+       
+      </fieldset>
+      <fieldset>
+        <textarea>Tell us more</textarea>
+      </fieldset>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </body>
+</html>
